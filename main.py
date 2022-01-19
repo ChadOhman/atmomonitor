@@ -45,7 +45,7 @@ bme = bme280.BME280(i2c=i2c, address=0x77)
 time.sleep(1)
 
 # Init CCS811 (Air Quality Sensor)
-ccs=ccs811.CCS811(i2c=i2c,addr=91)
+ccs=ccs811.CCS811(i2c=i2c,addr=0x5b)
 time.sleep(1)
 
 def secondsToString(s):
