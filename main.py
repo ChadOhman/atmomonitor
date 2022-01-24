@@ -92,7 +92,7 @@ while True:
         oled.text('tVOC: %d ppb' % (ccs.tVOC),0,9)
         oled.text(f"Temp: {temp_r} C",0,20)
         oled.text(f"Hum:  {humidity_r} %",0,30)
-        oled.text(f"Pres: {pressure_r} hPa",0,40)
+        oled.text(f"Pres: {pressure_r} kPa",0,40)
         if (runtime >= 1200):
             if (ccs.eCO2 <= 1000):
                 # set LED to green
